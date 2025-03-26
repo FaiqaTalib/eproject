@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>observation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Exo:wght@300;600&family=Poppins:wght@300;500&family=Playfair+Display:ital,wght@1,600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+<body class="dark" id="parent">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" id="navbar"></nav>
+    </header>
+    <main>
+        <div id="developments" class="sect1">
+            <div class="title d-flex justify-content-center pt-5">
+                <h1>Latest Developments in Astronomy</h1>
+            </div>
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="cards">
+                            <div class="img">
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+                                    <img src="./images/section1.jpg" alt="" class="img-fluid">
+                                </button>
+                                <div class="content">
+                                    <p>Click for more info</p>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h3><b>What makes Mars the 'Red' Planet? Scientists have some new ideas</b></h3>
+                            </div>
+                            <div class="card-text">
+                                Mars is widely known for its iconic rusty red color — many people even refer to it as
+                                just the "Red
+                                Planet" — but new research suggests the Martian shade isn't just lovely to look at. The
+                                chemistry
+                                behind Mars' rosy hue may actually hold important information about our cosmic neighbor.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal # 1-->
+                    <div class="modal fade" id="modal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3><b>What makes Mars the 'Red' Planet? Scientists have some new ideas</b></h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex flex-column">
+                                    <p>Mars' distinctive red color primarily arises from the presence of iron oxides,
+                                        particularly rust,
+                                        on its surface. Over billions of years, iron in Martian rocks and dust has
+                                        oxidized due to
+                                        exposure to the planet's thin atmosphere, leading to the formation of these
+                                        iron-rich minerals.
+                                    </p>
+                                    <div class="cont3">
+                                        <img src="./images/section1.jpg" alt="" class="img-fluid">
+                                        <p>The significance of Mars' red hue extends beyond aesthetics; it provides
+                                            crucial insights into
+                                            the planet's geological history and past environmental conditions. The
+                                            presence of oxidized iron
+                                            suggests that liquid water may have once existed on Mars, supporting
+                                            theories about its
+                                            potential to harbor life. Understanding the chemistry behind Mars' color not
+                                            only enhances our
+                                            knowledge of the planet's surface composition but also informs future
+                                            exploration and the search
+                                            for extraterrestrial life.</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="cards">
+                            <div class="img">
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal2">
+                                    <img src="./images/section2.jpg" alt="" class="img-fluid">
+                                </button>
+                                <div class="content">
+                                    <p>Click for more info</p>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h3><b>Japan launches navigation satellite on nation's 1st mission of 2025 (video)</b>
+                                </h3>
+                            </div>
+                            <div class="card-text">
+                                An H3 rocket launched the Michibiki 6 spacecraft from Tanegashima Space Center on Sunday
+                                at 3:30 a.m.
+                                EST (0830 GMT; 5:30 p.m. local Japan time). The H3 successfully sent the 10,800-pound
+                                (4,900-kilogram)
+                                Michibiki 6 to geostationary transfer orbit, deploying it there 29 minutes after launch
+                                as planned.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal # 2-->
+                    <div class="modal fade" id="modal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3><b>Japan launches navigation satellite on nation's 1st mission of 2025
+                                            (video)</b></h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex flex-column">
+                                    <p>An H3 rocket launched the Michibiki 6 spacecraft from Tanegashima Space Center on
+                                        Sunday at 3:30
+                                        a.m. EST (0830 GMT; 5:30 p.m. local Japan time). The H3 successfully sent the
+                                        10,800-pound
+                                        (4,900-kilogram) Michibiki 6 to geostationary transfer orbit, deploying it there
+                                        29 minutes after
+                                        launch as planned.</p>
+                                    <div class="cont3">
+                                        <img src="./images/section2.jpg" alt="" class="img-fluid">
+                                        <p>Weighing in at 10,800 pounds (4,900 kilograms), the Michibiki 6 satellite was
+                                            deployed into
+                                            geostationary transfer orbit just 29 minutes after launch, as planned. This
+                                            satellite is part of
+                                            Japan's Quasi-Zenith Satellite System (QZSS), which aims to improve the
+                                            accuracy and reliability
+                                            of GPS services in Japan and the surrounding region.</p>
+                                        <p>The successful deployment of Michibiki 6 not only strengthens Japan's
+                                            navigation capabilities
+                                            but also contributes to global satellite navigation systems. As the demand
+                                            for precise location
+                                            data continues to grow, the advancements made through missions like this one
+                                            are vital for
+                                            various applications, including transportation, disaster management, and
+                                            autonomous vehicle
+                                            technology.</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="cards">
+                            <div class="img">
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal3">
+                                    <img src="./images/section3.jpg" alt="" class="img-fluid">
+                                </button>
+                                <div class="content">
+                                    <p>Click for more info</p>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h3><b>Hubble Investigates Dwarf Galaxies Aligned Around the Andromeda Galaxy</b></h3>
+                            </div>
+                            <div class="card-text">
+                                A new Hubble Space Telescope survey shows intriguing patterns of star formation in dwarf
+                                galaxies
+                                aligned in a plane around the Andromeda Galaxy.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal # 3-->
+                    <div class="modal fade" id="modal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3><b>Hubble Investigates Dwarf Galaxies Aligned Around the Andromeda Galaxy</b>
+                                    </h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex flex-column">
+                                    <p>A new survey conducted by the Hubble Space Telescope has revealed intriguing
+                                        patterns of star
+                                        formation in the dwarf galaxies that are aligned in a plane around the Andromeda
+                                        Galaxy. This
+                                        research provides valuable insights into the dynamics of these smaller galaxies,
+                                        which often play
+                                        a crucial role in the larger galactic ecosystem. By utilizing Hubble's advanced
+                                        imaging
+                                        capabilities, astronomers have been able to create a detailed 3D map of these
+                                        dwarf galaxies,
+                                        uncovering their unique histories and the factors influencing their star
+                                        formation processes.</p>
+                                    <div class="cont3">
+                                        <img src="./images/section3.jpg" alt="" class="img-fluid">
+                                        <p>The findings indicate that these dwarf galaxies exhibit varying rates of star
+                                            formation, with
+                                            some experiencing bursts of activity while others remain relatively
+                                            inactive. This variation
+                                            suggests that environmental influences, such as gravitational interactions
+                                            with the Andromeda
+                                            Galaxy and the effects of dark matter, significantly impact their evolution.
+                                        </p>
+                                        <p>As researchers continue to analyze the data from this Hubble survey, they aim
+                                            to deepen our
+                                            understanding of how dwarf galaxies contribute to the overall evolution of
+                                            larger galaxies like
+                                            Andromeda. This study not only enhances our knowledge of the Andromeda
+                                            Galaxy's surroundings but
+                                            also sheds light on the broader processes that govern star formation and
+                                            galaxy evolution in the
+                                            universe.</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="cards">
+                            <div class="img">
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal4">
+                                    <img src="./images/section4.jpg" alt="" class="img-fluid">
+                                </button>
+                                <div class="content">
+                                    <p>Click for more info</p>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h3><b>US Space Force reveals 1st look at secretive X-37B space plane in orbit
+                                        (photo)</b></h3>
+                            </div>
+                            <div class="card-text">
+                                We've never seen the shadowy spacecraft while in orbit, and still barely know what it's
+                                up to up
+                                there. The United States Space Force just offered a rare glimpse of its shadowy X-37B
+                                space plane in
+                                orbit. And now, the X-37B has notched another milestone with the Space Force's release
+                                of this photo,
+                                the first-ever image of this space plane in orbit that has been shown to the public.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal # 4-->
+                    <div class="modal fade" id="modal4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3><b>US Space Force reveals 1st look at secretive X-37B space plane in orbit
+                                            (photo)</b></h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex flex-column">
+                                    <p>We've never seen the shadowy spacecraft while in orbit, and still barely know
+                                        what it's up to up
+                                        there. The X-37B, officially known as the X-37B Orbital Test Vehicle, is a
+                                        reusable spaceplane
+                                        developed by Boeing for the U.S. Space Force. It is designed for long-duration
+                                        missions in low
+                                        Earth orbit, conducting various experiments and tests in a classified capacity.
+                                    </p>
+                                    <div class="cont3">
+                                        <img src="./images/section4.jpg" alt="" class="img-fluid">
+                                        <p>Recently, the X-37B completed its seventh mission, which lasted 434 days in
+                                            orbit, marking a
+                                            significant milestone. Launched on December 29, 2023, aboard a SpaceX Falcon
+                                            Heavy rocket, this
+                                            mission involved novel maneuvers and advanced testing techniques, further
+                                            demonstrating the
+                                            capabilities of this unique space vehicle.</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="cards">
+                            <div class="img">
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal5">
+                                    <img src="./images/section5.jpg" alt="" class="img-fluid">
+                                </button>
+                                <div class="content">
+                                    <p>Click for more info</p>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h3><b>Sparkling galaxy blazes with star formation in new James Webb Space Telescope
+                                        image</b></h3>
+                            </div>
+                            <div class="card-text">
+                                A nearby galaxy is ablaze with new stars in a dazzling new image from the James Webb
+                                Space Telescope.
+                                Located 45 million light-years from Earth in the constellation Canis Major, this barred
+                                spiral galaxy,
+                                called NGC 2283, exhibits a bright central bar of stars encircled by loosely wound,
+                                swirling arms
+                                blazing with star clusters and interstellar gas.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal # 5-->
+                    <div class="modal fade" id="modal5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3><b>Sparkling galaxy blazes with star formation in new James Webb Space Telescope
+                                            image</b></h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex flex-column">
+                                    <p>A nearby galaxy is ablaze with new stars in a dazzling new image captured by the
+                                        James Webb Space
+                                        Telescope. Located 45 million light-years from Earth in the constellation Canis
+                                        Major, this barred
+                                        spiral galaxy, known as NGC 2283, showcases a stunning display of cosmic
+                                        activity. The image
+                                        reveals a bright central bar of stars that serves as the heart of the galaxy,
+                                        surrounded by
+                                        loosely wound, swirling arms that are teeming with vibrant star clusters and
+                                        interstellar gas.</p>
+                                    <div class="cont3">
+                                        <img src="./images/section5.jpg" alt="" class="img-fluid">
+                                        <p>The intricate structure of NGC 2283 highlights the dynamic processes of star
+                                            formation
+                                            occurring within its arms. The swirling patterns of gas and dust are not
+                                            only visually striking
+                                            but also indicate regions where new stars are being born. This ongoing
+                                            stellar activity provides
+                                            astronomers with valuable insights into the life cycle of galaxies and the
+                                            mechanisms that drive
+                                            star formation.</p>
+                                        <p>As we continue to explore galaxies like NGC 2283, the data collected by the
+                                            James Webb Space
+                                            Telescope will undoubtedly contribute to our knowledge of cosmic evolution
+                                            and the fundamental
+                                            processes that shape the universe. This remarkable image serves as a
+                                            reminder of the beauty and
+                                            complexity of the cosmos, inviting both scientists and enthusiasts alike to
+                                            marvel at the
+                                            wonders of space.</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="cards">
+                            <div class="img">
+                                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal6">
+                                    <img src="./images/section6.jpg" alt="" class="img-fluid">
+                                </button>
+                                <div class="content">
+                                    <p>Click for more info</p>
+                                </div>
+                            </div>
+                            <div class="card-title">
+                                <h3><b>How do black holes 'leak' energy? Scientists have a new spin on the answer</b>
+                                </h3>
+                            </div>
+                            <div class="card-text">
+                                Black holes may leak more energy to their surroundings than previously suspected — and
+                                the faster
+                                these voids spin, the more efficient this energy extraction seems to be. With this in
+                                mind, a team of
+                                scientists has discovered how the disks of gas and dust that swirl around black holes
+                                can become the
+                                powerful engines of galactic power plants. Here's what that means.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal # 6-->
+                    <div class="modal fade" id="modal6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3><b>How do black holes 'leak' energy? Scientists have a new spin on the
+                                            answer</b></h3>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex flex-column">
+                                    <p>Recent research indicates that black holes may leak more energy to their
+                                        surroundings than
+                                        previously thought, with faster-spinning black holes being more efficient at
+                                        this energy
+                                        extraction. Traditionally viewed as cosmic vacuum cleaners, black holes are now
+                                        recognized as
+                                        potential sources of energy that can influence their host galaxies.</p>
+                                    <div class="cont3">
+                                        <img src="./images/section6.jpg" alt="" class="img-fluid">
+                                        <p>A team of scientists has discovered that the disks of gas and dust swirling
+                                            around black holes
+                                            can act as powerful engines, converting the energy emitted by the black
+                                            holes into a form that
+                                            can be harnessed by surrounding matter. As material spirals into the black
+                                            hole, it heats up and
+                                            emits radiation, which can then be released into space. This process not
+                                            only contributes to the
+                                            growth of the black hole but also plays a crucial role in the energy
+                                            dynamics of the galaxy.</p>
+                                        <p>Understanding this energy leakage is vital for grasping the broader
+                                            implications of black holes
+                                            in cosmic evolution. It highlights how these enigmatic objects can affect
+                                            star formation and
+                                            galactic dynamics, reshaping our understanding of the fundamental processes
+                                            that govern the
+                                            universe.</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sect1" id="observe">
+            <div class="title d-flex justify-content-center pt-2">
+                <h1>Top Observations</h1>
+            </div>
+            <div class="home-gallery bg-transparent">
+                <div id="gallery" class="small-container">
+                    <div class="row justify-content-center">
+                        <div class="col-3">
+                            <div class="card" style="width: 18rem">
+                                <button style="border: none;" type="button" class="" data-bs-toggle="modal"
+                                    data-bs-target="#modal1a">
+                                    <img src="./images/obser1.jpg" height="300px" class="card-img-top" alt="..." />
+                                </button>
+                                <div class="card-body">
+                                    <h5 class="card-title">In October 2024, Karachi residents witnessed the rare
+                                        Comet C/2023 A3 (Tsuchinshan-ATLAS), last seen 80,000 years ago.</h5>
+                                    <p class="card-text">
+                                        The comet was visible to the naked eye around 4:45 AM, reaching 3-4 degrees
+                                        above the horizon before fading by 5:20 AM. This celestial event provided a
+                                        memorable experience for stargazers across Pakistan.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal # 1a-->
+                        <div class="modal fade" id="modal1a" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3><b>In October 2024, Karachi residents witnessed the rare
+                                                Comet C/2023 A3 (Tsuchinshan-ATLAS), last seen 80,000 years ago.</b>
+                                        </h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body d-flex ">
+                                        <p>The comet was visible to the naked eye around 4:45 AM, reaching 3-4 degrees
+                                            above the horizon before fading by 5:20 AM. This celestial event provided a
+                                            memorable experience for stargazers across Pakistan.
+                                        </p>
+                                        <div class="cont3">
+                                            <img src="./images/obser1.jpg" alt="" class="img-fluid">
+                                            <div id="map-karachi" class="map"></div>
+                                        </div>
+                                        <p>The News spreaded all across the media stating that some kind of astronomical
+                                            effect had happened.The comet appeared around 4:45 AM, glowing faintly just
+                                            above the horizon. For a brief moment, it was visible to the naked eye,
+                                            sitting 3 to 4 degrees above the horizon before fading away by 5:20 AM.
+                                            Stargazers across Pakistan stood in awe, realizing they were witnessing
+                                            something incredibly rare—something no human had seen for millennia.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card" style="width: 18rem">
+                                <button style="border: none;" type="button" class="" data-bs-toggle="modal"
+                                    data-bs-target="#modal2a">
+                                    <img src="./images/obser2.jpg" height="300px" class="card-img-top" alt="..." />
+                                </button>
+                                <div class="card-body">
+                                    <h5 class="card-title">NASA, Astronomical League team up for 2025 Hubble night
+                                        sky challenge</h5>
+                                    <p class="card-text">
+                                        Get ready to celebrate the Hubble Space Telescope's 35th anniversary with a
+                                        year full of observations.The Hubble Space Telescope is nearing its 35th
+                                        anniversary and skywatchers can celebrate the mighty telescope with a
+                                        year-long observation challenge.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal # 2a-->
+                        <div class="modal fade" id="modal2a" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3><b>NASA & Astronomical League Team Up for the 2025 Hubble Night Sky
+                                                Challenge</b>
+                                        </h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body d-flex ">
+                                        <p>As the Hubble Space Telescope approaches its 35th anniversary, NASA and the
+                                            Astronomical League are inviting skywatchers to celebrate with a year-long
+                                            observation challenge. This special event encourages astronomy enthusiasts
+                                            to observe and track celestial objects that Hubble has studied, bringing
+                                            people closer to the wonders of space.
+                                        </p>
+                                        <div class="cont3">
+                                            <img src="./images/obser2.jpg" alt="" class="img-fluid">
+
+                                        </div>
+                                        <p>Since its launch in 1990, Hubble has revolutionized our understanding of the
+                                            cosmos, capturing stunning images of distant galaxies, nebulae, and
+                                            exoplanets. The 2025 Hubble Night Sky Challenge will provide observation
+                                            guides and events throughout the year, making it an exciting way for
+                                            stargazers—both beginners and experts—to engage with the telescope’s
+                                            incredible legacy. </p>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card" style="width: 18rem">
+                                <button style="border: none;" type="button" class="" data-bs-toggle="modal"
+                                    data-bs-target="#modal3a">
+                                    <img src="./images/obser3.jpg" height="300px" class="card-img-top" alt="..." />
+                                </button>
+                                <div class="card-body">
+                                    <h5 class="card-title">Aurora Over Pakistan (2024)</h5>
+                                    <p class="card-text">
+                                        In May 2024, a rare geomagnetic storm caused stunning auroras visible as far
+                                        south as Pakistan, including Karachi and Islamabad. The sky lit up with shades
+                                        of green and purple, a once-in-a-lifetime sight for local stargazers.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal # 3a-->
+                        <div class="modal fade" id="modal3a" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3><b> Aurora Over Pakistan (2024) – A Rare Celestial Display</b>
+                                        </h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body d-flex flex-column">
+                                        <p>In May 2024, a powerful geomagnetic storm created a stunning aurora visible
+                                            as far south as Pakistan, including major cities like Karachi and Islamabad.
+                                            This rare event painted the night sky with vibrant shades of green and
+                                            purple, mesmerizing stargazers who had never witnessed such a phenomenon in
+                                            the region.
+                                        </p>
+                                        <div class="cont3">
+                                            <img src="./images/obser3.jpg" alt="" class="img-fluid">
+                                            <div id="map-Islamabad" class="map"></div>
+                                        </div>
+                                        <p>Usually confined to polar latitudes, the aurora’s appearance over Pakistan
+                                            was a once-in-a-lifetime event, sparking excitement among astronomers and
+                                            the general public alike. As the sky glowed with ethereal colors, social
+                                            media flooded with breathtaking images and videos, marking a historic moment
+                                            in the country’s astronomical history.</p>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card" style="width: 18rem">
+                                <button style="border: none;" type="button" class="" data-bs-toggle="modal"
+                                    data-bs-target="#modal4a">
+                                    <img src="./images/obser4.jpg" height="300px" class="card-img-top" alt="..." />
+                                </button>
+
+                                <div class="card-body">
+                                    <h5 class="card-title"> Blue Moon & Supermoon (August 2023)</h5>
+                                    <p class="card-text">
+                                        A rare combination of a Blue Moon and Supermoon occurred on August 31, 2023. The
+                                        Moon appeared larger and brighter, providing a breathtaking view for astronomy
+                                        lovers worldwide.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal # 4a-->
+                        <div class="modal fade" id="modal4a" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3><b> Blue Moon & Supermoon (August 2023) – A Rare Lunar Event</b>
+                                        </h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body d-flex flex-column">
+                                        <p>On August 31, 2023, skywatchers witnessed a spectacular cosmic phenomenon—a
+                                            rare combination of a Blue Moon and a Supermoon. The Moon appeared larger
+                                            and brighter than usual, creating a breathtaking sight that captivated
+                                            astronomy enthusiasts across the globe.
+                                        </p>
+                                        <div class="cont3">
+                                            <img src="./images/obser4.jpg" alt="" class="img-fluid">
+                                            <div id="map-Hawaii, USA" class="map"></div>
+                                        </div>
+                                        <p>This celestial event, which occurs when a second full moon rises within the
+                                            same month (Blue Moon) and coincides with the Moon’s closest approach to
+                                            Earth (Supermoon), made for an unforgettable night of stargazing. People
+                                            worldwide took to rooftops and open fields to witness the brilliantly
+                                            illuminated lunar surface, capturing stunning photos of this
+                                            once-in-a-blue-moon spectacle.</p>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card" style="width: 18rem">
+                                <button style="border: none;" type="button" class="" data-bs-toggle="modal"
+                                    data-bs-target="#modal5a">
+                                    <img src="./images/obser5.jpg" height="300px" class="card-img-top" alt="..." />
+                                </button>
+                                <div class="card-body">
+                                    <h5 class="card-title"> Partial Solar Eclipse (October 2023)</h5>
+                                    <p class="card-text">
+                                        A partial solar eclipse was visible in Pakistan on October 14, 2023. Observers
+                                        saw the Moon partially cover the Sun, creating a spectacular crescent shape in
+                                        the sky.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal # 5a-->
+                        <div class="modal fade" id="modal5a" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3><b> Partial Solar Eclipse (October 2023) – A Spectacular Celestial Show </b>
+                                        </h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body d-flex flex-column">
+                                        <p>On October 14, 2023, skywatchers in Pakistan witnessed a stunning partial
+                                            solar eclipse, as the Moon partially covered the Sun, creating a mesmerizing
+                                            crescent shape in the sky. This rare celestial event drew the attention of
+                                            astronomy enthusiasts, who gathered with special eclipse glasses and
+                                            telescopes to observe the phenomenon safely.
+                                        </p>
+                                        <div class="cont3">
+                                            <img src="./images/obser4.jpg" alt="" class="img-fluid">
+                                            <div id="map-quetta" class="map"></div>
+                                        </div>
+                                        <p>The partial eclipse served as a reminder of the dynamic nature of our solar
+                                            system, offering a breathtaking view for those lucky enough to witness it.
+                                            As the Moon moved across the Sun, the sky dimmed slightly, adding to the
+                                            surreal beauty of the event and leaving spectators in awe.
+                                        </p>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card" style="width: 18rem">
+                                <button style="border: none;" type="button" class="" data-bs-toggle="modal"
+                                    data-bs-target="#modal6a">
+                                    <img src="./images/obser6.jpg" height="300px" class="card-img-top" alt="..." />
+                                </button>
+                                <div class="card-body">
+                                    <h5 class="card-title">Gemini Meteor Shower (December 2024) </h5>
+                                    <p class="card-text">
+                                        The annual Geminid meteor shower peaked on December 13-14, 2024, with up to 120
+                                        meteors per hour visible under dark skies. It was one of the most dazzling
+                                        meteor showers of the year.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Modal # 6a-->
+                        <div class="modal fade" id="modal6a" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3><b>Gemini Meteor Shower (December 2024) – A Stunning Celestial Display </b>
+                                        </h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body d-flex flex-column">
+                                        <p>On December 13-14, 2024, the night sky came alive as the annual Geminid
+                                            meteor shower reached its peak, dazzling stargazers with up to 120 meteors
+                                            per hour under dark skies. Known for its bright and fast-moving meteors, the
+                                            Geminids provided one of the most spectacular astronomical events of the
+                                            year.
+                                        </p>
+                                        <div class="cont3">
+                                            <img src="./images/obser4.jpg" alt="" class="img-fluid">
+                                            <div id="map-skardu" class="map"></div>
+                                        </div>
+                                        <p>With vivid streaks of light flashing across the sky, the meteor shower left
+                                            observers in awe. The clear winter skies made for ideal viewing conditions,
+                                            allowing astronomy enthusiasts to witness the cosmic spectacle in all its
+                                            glory.</p>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="./Copy.js"></script>
+<script src="./theme.js"></script>
+<script src="./geolocation.js"></script>
+
+</html>

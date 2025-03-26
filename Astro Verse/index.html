@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> AstroVerse</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Exo:wght@300;600&family=Poppins:wght@300;500&family=Playfair+Display:ital,wght@1,600&display=swap"
+    rel="stylesheet" />
+  <style>
+
+  </style>
+</head>
+<div class="dark" id="parent">
+  <body >
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark" id="navbar"></nav>
+    </header>
+    <main>
+      <div class="slider">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img src="./images/solar1.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <video src="./images/solar5.mp4" preload autoplay loop></video>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="./images/solar2.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img src="./images/solar4.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <video src="./images/solar3.mp4" preload autoplay loop></video>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="" aria-hidden="true"><i class="fa-solid fa-meteor Prev"></i></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="" aria-hidden="true"><i class="fa-solid fa-meteor Next"></i></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="cont1">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-12 intro-img">
+              <div id="carouselExampleSlidesOnly" class="carousel slide p-0 m-0" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active intro-img" data-bs-interval="3000">
+                    <img src="./images/space3.jpg" class="d-block w-100 img-fluid" alt="..." />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./images/space2.jpg" class="d-block w-100" alt="..." />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./images/space1.jpg" class="d-block w-100" alt="..." />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <div class="intro-heading">
+                <h3><b>AstroVerse</b></h3>
+                <h4>Unlocking the Mysteries of Space</h4>
+                <p class="intro-text">
+                  Welcome to the Wonders of the Universe! Explore the beauty of
+                  space, learn intersting facts from the blazing Sun to the
+                  distant icy Neptune and beyond. Discover fascinating facts
+                  about planets, stars, and the mysteries of the cosmos. Whether
+                  you're a space enthusiast or just curious, this website will
+                  take you on an incredible journey through our solar system and
+                  beyond.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="home-gallery">
+        <div id="gallery" class="small-container">
+          <div class="row justify-content-center" id="card">
+            <!-- the data given in these cards is in Json in Copy.js -->
+          </div>
+        </div>
+      </div>
+      <div id="developments" class="sect1">
+        <div class="title d-flex justify-content-center ">
+          <h1>Latest Developments in Astronomy</h1>
+        </div>
+        <div class="container mt-4">
+          <div class="row">
+            <div class="col-lg-4 col-sm-6">
+              <div class="cards">
+                <div class="img">
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal1">
+                    <img src="./images/section1.jpg" alt="" class="img-fluid">
+                  </button>
+                  <div class="content">
+                    <p>Click for more info</p>
+                  </div>
+                </div>
+                <div class="card-title">
+                  <h3><b>What makes Mars the 'Red' Planet? Scientists have some new ideas</b></h3>
+                </div>
+                <div class="card-text">
+                  Mars is widely known for its iconic rusty red color — many people even refer to it as just the "Red
+                  Planet" — but new research suggests the Martian shade isn't just lovely to look at. The chemistry
+                  behind Mars' rosy hue may actually hold important information about our cosmic neighbor.
+                </div>
+              </div>
+            </div>
+            <!-- Modal # 1-->
+            <div class="modal fade" id="modal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3><b>What makes Mars the 'Red' Planet? Scientists have some new ideas</b></h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body d-flex flex-column">
+                    <p>Mars' distinctive red color primarily arises from the presence of iron oxides, particularly rust,
+                      on its surface. Over billions of years, iron in Martian rocks and dust has oxidized due to
+                      exposure to the planet's thin atmosphere, leading to the formation of these iron-rich minerals.
+                    </p>
+                    <div class="cont3">
+                      <img src="./images/section1.jpg" alt="" class="img-fluid">
+                      <p>The significance of Mars' red hue extends beyond aesthetics; it provides crucial insights into
+                        the planet's geological history and past environmental conditions. The presence of oxidized iron
+                        suggests that liquid water may have once existed on Mars, supporting theories about its
+                        potential to harbor life. Understanding the chemistry behind Mars' color not only enhances our
+                        knowledge of the planet's surface composition but also informs future exploration and the search
+                        for extraterrestrial life.</p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="cards">
+                <div class="img">
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal2">
+                    <img src="./images/section2.jpg" alt="" class="img-fluid">
+                  </button>
+                  <div class="content">
+                    <p>Click for more info</p>
+                  </div>
+                </div>
+                <div class="card-title">
+                  <h3><b>Japan launches navigation satellite on nation's 1st mission of 2025 (video)</b></h3>
+                </div>
+                <div class="card-text">
+                  An H3 rocket launched the Michibiki 6 spacecraft from Tanegashima Space Center on Sunday at 3:30 a.m.
+                  EST (0830 GMT; 5:30 p.m. local Japan time). The H3 successfully sent the 10,800-pound (4,900-kilogram)
+                  Michibiki 6 to geostationary transfer orbit, deploying it there 29 minutes after launch as planned.
+                </div>
+              </div>
+            </div>
+            <!-- Modal # 2-->
+            <div class="modal fade" id="modal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3><b>Japan launches navigation satellite on nation's 1st mission of 2025 (video)</b></h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body d-flex flex-column">
+                    <p>An H3 rocket launched the Michibiki 6 spacecraft from Tanegashima Space Center on Sunday at 3:30
+                      a.m. EST (0830 GMT; 5:30 p.m. local Japan time). The H3 successfully sent the 10,800-pound
+                      (4,900-kilogram) Michibiki 6 to geostationary transfer orbit, deploying it there 29 minutes after
+                      launch as planned.</p>
+                    <div class="cont3">
+                      <img src="./images/section2.jpg" alt="" class="img-fluid">
+                      <p>Weighing in at 10,800 pounds (4,900 kilograms), the Michibiki 6 satellite was deployed into
+                        geostationary transfer orbit just 29 minutes after launch, as planned. This satellite is part of
+                        Japan's Quasi-Zenith Satellite System (QZSS), which aims to improve the accuracy and reliability
+                        of GPS services in Japan and the surrounding region.</p>
+                      <p>The successful deployment of Michibiki 6 not only strengthens Japan's navigation capabilities
+                        but also contributes to global satellite navigation systems. As the demand for precise location
+                        data continues to grow, the advancements made through missions like this one are vital for
+                        various applications, including transportation, disaster management, and autonomous vehicle
+                        technology.</p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="cards">
+                <div class="img">
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal3">
+                    <img src="./images/section3.jpg" alt="" class="img-fluid">
+                  </button>
+                  <div class="content">
+                    <p>Click for more info</p>
+                  </div>
+                </div>
+                <div class="card-title">
+                  <h3><b>Hubble Investigates Dwarf Galaxies Aligned Around the Andromeda Galaxy</b></h3>
+                </div>
+                <div class="card-text">
+                  A new Hubble Space Telescope survey shows intriguing patterns of star formation in dwarf galaxies
+                  aligned in a plane around the Andromeda Galaxy.
+                </div>
+              </div>
+            </div>
+            <!-- Modal # 3-->
+            <div class="modal fade" id="modal3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3><b>Hubble Investigates Dwarf Galaxies Aligned Around the Andromeda Galaxy</b></h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body d-flex flex-column">
+                    <p>A new survey conducted by the Hubble Space Telescope has revealed intriguing patterns of star
+                      formation in the dwarf galaxies that are aligned in a plane around the Andromeda Galaxy. This
+                      research provides valuable insights into the dynamics of these smaller galaxies, which often play
+                      a crucial role in the larger galactic ecosystem. By utilizing Hubble's advanced imaging
+                      capabilities, astronomers have been able to create a detailed 3D map of these dwarf galaxies,
+                      uncovering their unique histories and the factors influencing their star formation processes.</p>
+                    <div class="cont3">
+                      <img src="./images/section3.jpg" alt="" class="img-fluid">
+                      <p>The findings indicate that these dwarf galaxies exhibit varying rates of star formation, with
+                        some experiencing bursts of activity while others remain relatively inactive. This variation
+                        suggests that environmental influences, such as gravitational interactions with the Andromeda
+                        Galaxy and the effects of dark matter, significantly impact their evolution.</p>
+                      <p>As researchers continue to analyze the data from this Hubble survey, they aim to deepen our
+                        understanding of how dwarf galaxies contribute to the overall evolution of larger galaxies like
+                        Andromeda. This study not only enhances our knowledge of the Andromeda Galaxy's surroundings but
+                        also sheds light on the broader processes that govern star formation and galaxy evolution in the
+                        universe.</p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="cards">
+                <div class="img">
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal4">
+                    <img src="./images/section4.jpg" alt="" class="img-fluid">
+                  </button>
+                  <div class="content">
+                    <p>Click for more info</p>
+                  </div>
+                </div>
+                <div class="card-title">
+                  <h3><b>US Space Force reveals 1st look at secretive X-37B space plane in orbit (photo)</b></h3>
+                </div>
+                <div class="card-text">
+                  We've never seen the shadowy spacecraft while in orbit, and still barely know what it's up to up
+                  there. The United States Space Force just offered a rare glimpse of its shadowy X-37B space plane in
+                  orbit. And now, the X-37B has notched another milestone with the Space Force's release of this photo,
+                  the first-ever image of this space plane in orbit that has been shown to the public.
+                </div>
+              </div>
+            </div>
+            <!-- Modal # 4-->
+            <div class="modal fade" id="modal4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3><b>US Space Force reveals 1st look at secretive X-37B space plane in orbit (photo)</b></h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body d-flex flex-column">
+                    <p>We've never seen the shadowy spacecraft while in orbit, and still barely know what it's up to up
+                      there. The X-37B, officially known as the X-37B Orbital Test Vehicle, is a reusable spaceplane
+                      developed by Boeing for the U.S. Space Force. It is designed for long-duration missions in low
+                      Earth orbit, conducting various experiments and tests in a classified capacity.</p>
+                    <div class="cont3">
+                      <img src="./images/section4.jpg" alt="" class="img-fluid">
+                      <p>Recently, the X-37B completed its seventh mission, which lasted 434 days in orbit, marking a
+                        significant milestone. Launched on December 29, 2023, aboard a SpaceX Falcon Heavy rocket, this
+                        mission involved novel maneuvers and advanced testing techniques, further demonstrating the
+                        capabilities of this unique space vehicle.</p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="cards">
+                <div class="img">
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal5">
+                    <img src="./images/section5.jpg" alt="" class="img-fluid">
+                  </button>
+                  <div class="content">
+                    <p>Click for more info</p>
+                  </div>
+                </div>
+                <div class="card-title">
+                  <h3><b>Sparkling galaxy blazes with star formation in new James Webb Space Telescope image</b></h3>
+                </div>
+                <div class="card-text">
+                  A nearby galaxy is ablaze with new stars in a dazzling new image from the James Webb Space Telescope.
+                  Located 45 million light-years from Earth in the constellation Canis Major, this barred spiral galaxy,
+                  called NGC 2283, exhibits a bright central bar of stars encircled by loosely wound, swirling arms
+                  blazing with star clusters and interstellar gas.
+                </div>
+              </div>
+            </div>
+            <!-- Modal # 5-->
+            <div class="modal fade" id="modal5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3><b>Sparkling galaxy blazes with star formation in new James Webb Space Telescope image</b></h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body d-flex flex-column">
+                    <p>A nearby galaxy is ablaze with new stars in a dazzling new image captured by the James Webb Space
+                      Telescope. Located 45 million light-years from Earth in the constellation Canis Major, this barred
+                      spiral galaxy, known as NGC 2283, showcases a stunning display of cosmic activity. The image
+                      reveals a bright central bar of stars that serves as the heart of the galaxy, surrounded by
+                      loosely wound, swirling arms that are teeming with vibrant star clusters and interstellar gas.</p>
+                    <div class="cont3">
+                      <img src="./images/section5.jpg" alt="" class="img-fluid">
+                      <p>The intricate structure of NGC 2283 highlights the dynamic processes of star formation
+                        occurring within its arms. The swirling patterns of gas and dust are not only visually striking
+                        but also indicate regions where new stars are being born. This ongoing stellar activity provides
+                        astronomers with valuable insights into the life cycle of galaxies and the mechanisms that drive
+                        star formation.</p>
+                      <p>As we continue to explore galaxies like NGC 2283, the data collected by the James Webb Space
+                        Telescope will undoubtedly contribute to our knowledge of cosmic evolution and the fundamental
+                        processes that shape the universe. This remarkable image serves as a reminder of the beauty and
+                        complexity of the cosmos, inviting both scientists and enthusiasts alike to marvel at the
+                        wonders of space.</p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="cards">
+                <div class="img">
+                  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal6">
+                    <img src="./images/section6.jpg" alt="" class="img-fluid">
+                  </button>
+                  <div class="content">
+                    <p>Click for more info</p>
+                  </div>
+                </div>
+                <div class="card-title">
+                  <h3><b>How do black holes 'leak' energy? Scientists have a new spin on the answer</b></h3>
+                </div>
+                <div class="card-text">
+                  Black holes may leak more energy to their surroundings than previously suspected — and the faster
+                  these voids spin, the more efficient this energy extraction seems to be. With this in mind, a team of
+                  scientists has discovered how the disks of gas and dust that swirl around black holes can become the
+                  powerful engines of galactic power plants. Here's what that means.
+                </div>
+              </div>
+            </div>
+            <!-- Modal # 6-->
+            <div class="modal fade" id="modal6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h3><b>How do black holes 'leak' energy? Scientists have a new spin on the answer</b></h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body d-flex flex-column">
+                    <p>Recent research indicates that black holes may leak more energy to their surroundings than
+                      previously thought, with faster-spinning black holes being more efficient at this energy
+                      extraction. Traditionally viewed as cosmic vacuum cleaners, black holes are now recognized as
+                      potential sources of energy that can influence their host galaxies.</p>
+                    <div class="cont3">
+                      <img src="./images/section6.jpg" alt="" class="img-fluid">
+                      <p>A team of scientists has discovered that the disks of gas and dust swirling around black holes
+                        can act as powerful engines, converting the energy emitted by the black holes into a form that
+                        can be harnessed by surrounding matter. As material spirals into the black hole, it heats up and
+                        emits radiation, which can then be released into space. This process not only contributes to the
+                        growth of the black hole but also plays a crucial role in the energy dynamics of the galaxy.</p>
+                      <p>Understanding this energy leakage is vital for grasping the broader implications of black holes
+                        in cosmic evolution. It highlights how these enigmatic objects can affect star formation and
+                        galactic dynamics, reshaping our understanding of the fundamental processes that govern the
+                        universe.</p>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer"></footer>
+  </body>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="./Copy.js"></script>
+<script src="./theme.js"></script>
+
+</html>

@@ -1,0 +1,638 @@
+/* Whole styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav li a:hover {
+    text-decoration: underline;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+/* Whole styling end */
+
+/* Navbar */
+.nav-title {
+    color: #ffffff;
+    font-family: Orbitron, sans-serif;
+}
+.nav-brand a {
+    display: flex;
+}
+.navbar-nav {
+    color: white;
+}
+nav {
+    background-color: #0A192F;
+}
+.nav-title .com-text {
+    display: inline-block;
+    font-size: x-small;
+    transform: rotate(90deg);
+    position: relative;
+    left: -32px;
+    top: 1px;
+}
+/* Navbar End */
+
+/* Button Styles */
+.butn {
+    padding: 10px 20px;
+    background-color: #2ECC71;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0;
+}
+/* Fonts */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+h1,
+h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #0A192F;
+}
+h3,
+h4,
+h5 {
+    font-family: 'Exo', sans-serif;
+    color: #0A192F;
+}
+.modal-body p{
+    font-family: 'Exo', sans-serif;
+}
+blockquote {
+    font-family: 'Playfair Display', serif;
+}
+li {
+    font-family: 'Exo', sans-serif;
+}
+ul {
+    font-family: 'Poppins', sans-serif;
+}
+/* Fonts End */
+/* Web Intro */
+.cont1 {
+    background-color: #C0C0C0;
+    margin: 0;
+    padding: 0;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.cont1 .row {
+    border-radius: 27px;
+}
+.cont1 .container .intro-img {
+    margin: 0;
+    padding: 0;
+}
+.cont1 .container .carousel img {
+    height: 400px;
+    border-radius: 24px;
+}
+.intro-heading {
+    margin-top: 15%;
+}
+
+/* Web Intro End */
+
+/* home gallery */
+.home-gallery {
+    background-color: #f8f9fa;
+    display: flex;
+}
+.slider {
+    margin: 0;
+    padding: 0;
+}
+.slider .carousel {
+    width: 100%;
+}
+.slider .carousel-inner img,
+.slider .carousel-inner video {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.slider .carousel-item img {
+    height: 500px;
+}
+.Next {
+    transform: rotate(230deg);
+    font-size: xxx-large;
+    color: #D9A404;
+    background-size: cover;
+}
+.Prev {
+    font-size: xxx-large;
+    transform: rotate(40deg);
+    color: #D9A404;
+}
+.card {
+    height: 420px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease-in-out;
+}
+.col-3 a {
+    text-decoration: none;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.card-text {
+    color: #5E2BFF;
+    font-weight: lighter;
+}
+.col-3 {
+    min-width: 300px;
+}
+.small-container .row .card img {
+    width: 100%;
+    height: 200px;
+}
+.hstyle {
+    color: #C0C0C0;
+}
+.small-container .row .card {
+    background-size: cover;
+}
+.small-container {
+    margin-bottom: 60px;
+}
+.small-container .row {
+    gap: 30px;
+    margin: 0px;
+    margin-top: 50px;
+}
+/* home gallery end */
+
+/* Section 1 */
+.sect1 {
+    padding: 15px 0px;
+}
+.cards {
+    overflow: hidden;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    height: 500px;
+    width: 345px;
+    transition: transform 0.3s ease-in-out;
+}
+.cards:hover {
+    transform: translateY(-10px);
+}
+.cards img {
+    border-radius: 2px;
+    width: 100%;
+    height: 250px;
+}
+.light .cards .card-text {
+    color: #0A192F;
+}
+.img {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.img img {
+    transition: transform 0.3s ease;
+}
+.content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    opacity: 0;
+    padding: 5px;
+    text-align: center;
+    transform: translateY(100%);
+    transition: opacity 1s ease, transform 0.3s ease;
+}
+.img:hover .content {
+    opacity: 1;
+    transform: translateY(0);
+}
+.img:hover img {
+    transform: scale(1.1);
+}
+.cards .img button {
+    margin: 0;
+    padding: 0;
+}
+.cards .img img {
+    width: 345px;
+}
+/* Section 1 end */
+
+/* Footer */
+.titles {
+    display: flex;
+    justify-content: center;
+}
+.footer .row {
+    gap: 10px;
+    margin: 20px;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    text-align: center;
+}
+footer {
+    display: flex;
+    background-color: #0A192F;
+
+}
+.footer p {
+    color: #f8f9fa;
+    font-family: 'Exo', sans-serif;
+}
+.foot-title {
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: x-large;
+    margin-bottom: 15px;
+}
+.footer a {
+    text-decoration: none;
+    color: #f8f9fa;
+    font-weight: lighter;
+}
+.footer span {
+    display: inline;
+}
+.footer hr {
+    color: #C0C0C0;
+}
+.footer .com-text {
+    display: inline-block;
+    font-size: x-small;
+    transform: rotate(90deg);
+    position: relative;
+    left: -14px;
+    top: 3px;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+}
+.footer h6 {
+    transform: rotate(90deg);
+    font-size: xx-small;
+    margin-top: 12px;
+    margin-left: -12px;
+}
+.footer .com-text {
+    display: inline-block;
+    font-size: x-small;
+    transform: rotate(90deg);
+    position: relative;
+    left: -14px;
+    top: 3px;
+}
+/* Footer end */
+
+/* Planets page */
+.planets .row {
+    border-radius: 27px;
+}
+.planets .row img {
+    border-radius: 27px;
+    height: 350px;
+}
+.planets ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.planets li {
+    font-family: 'Exo', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 0;
+    transition: color 0.3s ease-in-out;
+}
+/* Planets end */
+
+/* Big Bang */
+.Mcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Mcontainer .row {
+    width: 100vw;
+    margin-bottom: 40px;
+}
+.Mcontainer .carousel img {
+    width: 100%;
+    border-radius: 21px;
+
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+.Mcontainer .image {
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+.Mcontainer .carousel {
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+.cont2 {
+    display: flex;
+    width: 100vw;
+    margin-top: 45px;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cont2 .below {
+    width: 80vw;
+}
+.cont2 h3,
+h4 {
+    font-weight: bold;
+}
+/* Big Bang end */
+
+/* Modal styling */
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+}
+.modal-header h3 {
+    color: #f8f9fa;
+}
+.modal-title {
+    color: #f8f9fa;
+}
+.home-gallery .modal .cont3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.cont3 img {
+    width: 355px;
+    height: 250px;
+}
+.map{
+    height: 250px;
+    width: 355px;
+}
+/* themes */
+
+/* Dark Theme Styles */
+.dark {
+    background-color: #0B0F0E;
+    color: #C0C0C0;
+}
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5 {
+    color: #1DBF73;
+}
+.dark nav,
+.dark footer {
+    background-color: #11221D;
+}
+.dark .nav-item a:hover {
+    text-shadow: 0 0 10px #0FF, 0 0 15px #1DBF73;
+}
+.dark .foot-title a:hover {
+    text-shadow: 0 0 10px #1DBF73, 0 0 20px #1DBF73, 0 0 30px #1DBF73;
+
+}
+
+.dark .foot-link:hover {
+    color: #1DBF73;
+}
+.dark .footer .row a:hover {
+    color: #1DBF73;
+}
+.dark .sect1,
+.dark .cont1 {
+    background-color: #141A19;
+}
+.dark .title :hover {
+    color: #c0c0c0;
+    text-shadow: 0 0 10px #1DBF73, 0 0 20px #1DBF73, 0 0 30px #1DBF73;
+}
+.dark .dropdown-menu {
+    background-color: #141A19;
+
+}
+.dark .dropdown-item{
+    color: #c0c0c0;
+}
+.dark .dropdown-item:hover {
+    background-color: #09110F;
+    color: #C0C0C0;
+}
+.dark .home-gallery {
+    background-color: #0B0F0E;
+}
+.dark .cont1 .row {
+    background-color: #0B0F0E;
+}
+.dark .card {
+    background-color: #1C3328;
+    color: #C0C0C0;
+}
+.dark .card:hover {
+    box-shadow: 0 0 10px #1DBF73, 0 0 20px #16A062, 0 0 30px #129F58;
+}
+.dark .card:hover .card-text {
+    color: #129F58;
+}
+.dark .nav-title a:hover {
+    text-shadow: 0 0 10px #1DBF73, 0 0 20px #1DBF73, 0 0 30px #1DBF73;
+}
+.dark .cards {
+    background-color: #0B0F0E;
+    border: 5px solid #0B0F0E;
+}
+.dark .cards:hover {
+    box-shadow: 0 0 15px #1DBF73, 0 0 25px #16A062, 0 0 35px #129F58, 0 0 45px rgba(18, 159, 88, 0.5);
+
+}
+.dark .card-text {
+    color: #C0C0C0;
+}
+.dark .planets-body {
+    background-color: #0B0F0E;
+}
+.dark .planets .row {
+    background-color: #141A19;
+    color: #1DBF73;
+}
+.dark .planets li {
+    color: #0E7D47;
+}
+.dark .planets li::before {
+    content: "★";
+    color: #14A098;
+    font-size: 14px;
+    margin-right: 8px;
+}
+.dark .planets li:hover {
+    color: #D9A404;
+    cursor: pointer;
+}
+.dark .planets li span {
+    color: #c0c0c0;
+}
+.dark .Mcontainer{
+    background-color: #141A19;
+    color: #c0c0c0;
+}
+.dark .Mcontainer .carousel img{
+    border: 3px solid #D9A404;
+}
+.dark .Mcontainer .row{
+    background-color: #0B0F0E;
+}  
+.dark .social-icons a:hover{
+    color: #1DBF73;
+}   
+.dark .modal {
+    margin-top: 0px;
+    background-color: #103b318f;
+    backdrop-filter: blur(08px);
+}
+.dark .modal-body{
+    background-color: #1B2B29;
+}
+.dark
+.modal-header{
+    background-color: #141A19;
+}
+.dark .modal-footer {
+    background-color: #141A19
+}
+/* Light Theme Styles */
+.light
+.modal-header,
+.modal-footer {
+    background-color: #0A192F;
+}
+.light {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+.light nav,
+.light footer {
+    background-color: #0A192f;
+}
+.light .nav-item a:hover {
+    text-shadow: 0 0 10px rgb(252, 138, 8), 0 0 20px rgb(252, 138, 8), 0 0 30px rgb(252, 138, 8)
+}
+.light .foot-title a:hover {
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+}
+.light .foot-link:hover {
+    color: #5E2BFF;
+}
+.light .footer .row a:hover {
+    color: #5E2BFF;
+}
+.light .dropdown-menu {
+    background-color: #C0C0C0;
+}
+.light .dropdown-item:hover {
+    color: #f8f9fa;
+}
+.light .home-gallery {
+    background-color: #f8f9fa;
+}
+.light .sect1,
+.light .cont1 {
+    background-color: #c0c0c0;
+}
+.light .title :hover {
+    color: #f8f9fa;
+    text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+}
+.light .cont1 .row {
+    background-color: #f8f9fa;
+}
+.light .card:hover {
+    box-shadow: 0 0 10px rgb(49, 23, 167), 0 0 20px rgb(252, 138, 8), 0 0 30px #0ff;
+}
+.light .cards {
+    border: 5px solid #f8f9fa;
+    background-color: #f8f9fa;
+    color: #C0C0C0;
+}
+.light .card:hover .card-text {
+    color: #14A098;
+}
+.light .cards:hover {
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+}
+.light .planets-body {
+    background-color: #f8f9fa;
+}
+.light .planets .row {
+    background-color: #C0C0C0;
+    color: #0A192F;
+}
+.light .planets li {
+    color: #5E2BFF;
+}
+.light .planets li::before {
+    content: "★";
+    color: rgb(252, 138, 8);
+    font-size: 14px;
+    margin-right: 8px;
+}
+.light .planets li:hover {
+    color: #1194ff;
+    cursor: pointer;
+}
+.light .planets li span {
+    color: #0A192F;
+}
+.light .Mcontainer{
+    background-color: #c0c0c0;
+    color: #212529;
+}
+.light .Mcontainer .carousel img{
+    border: 3px solid #0A192F;
+}
+.light .Mcontainer .row{
+    background-color: #f8f9fa;
+}
+.light .social-icons a:hover{
+color: #5E2BFF;
+}
+.light .modal {
+    margin-top: 0px;
+    background-color: rgba(0, 30, 58, 0.5);
+    backdrop-filter: blur(08px);
+}
+.social-icons a{
+    margin-left: 10px;
+    }
