@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameVerse - Gaming Consoles</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #0d0d0d;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 20px #00f2ff33;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #00f2ff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background: #222;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #00f2ff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff007f;
+    }
+
+    .slider {
+      position: relative;
+      max-width: 100%;
+      height: 800px;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slide 12s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+    }
+
+    @keyframes slide {
+      0% { margin-left: 0%; }
+      33% { margin-left: -100%; }
+      66% { margin-left: -200%; }
+      100% { margin-left: 0%; }
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      color: #00f2ff;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #1a1a1a;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 400px;
+      box-shadow: 0 0 15px #00f2ff33;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width:100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 15px 0;
+      color: #ff007f;
+    }
+
+    .card p {
+      padding: 0 15px 20px;
+      color: #ccc;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      border-top: 1px solid #333;
+    }
+
+    footer p {
+      color: #777;
+    }
+
+    @media (max-width: 768px) {
+      .slider {
+        height: 200px;
+      }
+
+      .slides img {
+        height: 200px;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>GameVerse</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="consoles.html">Consoles</a>
+    <a href="games.html">Games</a>
+       <a href="compare.html">Compare Products</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="slider">
+    <div class="slides">
+      <img src="images/Playstation/play14.jpg" alt="Slider 1">
+      <img src="images/Playstation/play15.jpg" alt="Slider 2">
+      <img src="images/Playstation/play16.jpg" alt="Slider 3">
+    </div>
+  </div>
+
+  <section class="section">
+    <h2>Top Games</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="images/Playstation/play20.jpg" alt="PS5">
+      </div>
+      <div class="card">
+        <img src="images/Playstation/play21.jpg" alt="Xbox">
+        
+      </div>
+      <div class="card">
+        <img src="images/Playstation/play22.jpg" alt="Switch">
+        
+      </div>
+      <div class="card">
+        <img src="images/Playstation/play23.jpg" alt="Switch">
+        
+      </div>
+      <div class="card">
+        <img src="images/Playstation/play24.jpg" alt="Switch">
+        
+      </div>
+      <div class="card">
+        <img src="images/Playstation/play25.jpg" alt="Switch">
+        
+      </div>
+      <div class="card">
+        <img src="images/Playstation/play26.jpg" alt="Switch">
+        
+      </div>
+      <div class="card">
+        <img src="images/Playstation/play27.jpg" alt="Switch">
+        
+      </div>
+      <div class="card">
+        <img src="images/Playstation/play28.jpg" alt="Switch">
+        
+      </div>
+      <div class="card">
+        <img src="images/Playstation/play29.jpg" alt="Switch">
+        
+      </div>
+      <div class="card">
+        <img src="images/Playstation/play30.jpg" alt="Switch">
+        
+      </div>
+      <div class="card">
+        <img src="images/Playstation/play31.jpg" alt="Switch">
+        
+      </div>
+  <div class="card">
+        <img src="images/Playstation/play32.jpg" alt="Switch">
+        
+      </div>
+        <div class="card">
+        <img src="images/Playstation/play33.jpg" alt="Switch">
+        
+      </div>
+  <div class="card">
+        <img src="images/Playstation/play34.jpg" alt="Switch">
+        
+      </div>
+        <div class="card">
+        <img src="images/Playstation/play35.jpg" alt="Switch">
+        
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 GameVerse. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

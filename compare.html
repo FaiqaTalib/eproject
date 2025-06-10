@@ -1,0 +1,209 @@
+<!-- compare.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compare Products - Tangoline Inc.</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+    }
+    .table td, .table th {
+      vertical-align: middle;
+    }
+   
+    .image-gallery img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-img:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+  cursor: pointer;
+}
+
+.image-gallery h3 {
+  font-size: 2rem;
+  color: #fff;
+  animation: fadeInDown 1s ease;
+}
+
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+     header {
+      background: #111;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 20px #00f2ff33;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #00f2ff;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      background: #222;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #00f2ff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff007f;
+    }
+     footer {
+      background: #111;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      border-top: 1px solid #333;
+    }
+
+    footer p {
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+ <header>
+    <h1>GameVerse</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="consoles.html">Consoles</a>
+    <a href="games.html">Games</a>
+    <a href="contact.html">Contact</a>
+       <a href="compare.html">Compare Products</a>
+  </nav>
+
+  <!-- Compare Products Section -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Compare Products</h2>
+      <p class="lead text-center mb-5">Explore the features, pricing, and performance of top gaming consoles available in the market today.</p>
+      <div class="table-responsive">
+        <table class="table table-bordered table-dark table-hover">
+          <thead class="table-secondary text-dark">
+            <tr>
+              <th>Feature</th>
+              <th>Sony PlayStation 5</th>
+              <th>Xbox Series X</th>
+              <th>Nintendo Switch</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Brand</td>
+              <td>SONY</td>
+              <td>Microsoft</td>
+              <td>Nintendo</td>
+            </tr>
+            <tr>
+              <td>Processor</td>
+              <td>8-core AMD Zen 2</td>
+              <td>8-core AMD Zen 2</td>
+              <td>NVIDIA Custom Tegra</td>
+            </tr>
+            <tr>
+              <td>Storage</td>
+              <td>825 GB SSD</td>
+              <td>1 TB SSD</td>
+              <td>32 GB Internal + microSD</td>
+            </tr>
+            <tr>
+              <td>Resolution</td>
+              <td>Up to 8K</td>
+              <td>Up to 8K</td>
+              <td>Up to 1080p</td>
+            </tr>
+            <tr>
+              <td>Game Library</td>
+              <td>Extensive exclusives like God of War, Spider-Man</td>
+              <td>Popular titles like Halo, Forza</td>
+              <td>Family-friendly games, Mario, Zelda</td>
+            </tr>
+            <tr>
+              <td>Backward Compatibility</td>
+              <td>PS4</td>
+              <td>Xbox One, Xbox 360, Original Xbox</td>
+              <td>Limited</td>
+            </tr>
+            <tr>
+              <td>VR Support</td>
+              <td>PlayStation VR</td>
+              <td>Not available</td>
+              <td>Not available</td>
+            </tr>
+            <tr>
+              <td>Online Services</td>
+              <td>PlayStation Plus</td>
+              <td>Xbox Game Pass</td>
+              <td>Nintendo Online</td>
+            </tr>
+            <tr>
+              <td>Price</td>
+              <td>$499</td>
+              <td>$499</td>
+              <td>$299</td>
+            </tr>
+            <tr>
+              <td>Download Info</td>
+              <td><a href="#" class="btn btn-sm btn-light" download>Download</a></td>
+              <td><a href="#" class="btn btn-sm btn-light" download>Download</a></td>
+              <td><a href="#" class="btn btn-sm btn-light" download>Download</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  
+
+
+
+  <!-- Image Gallery -->
+<section class="py-5 bg-black image-gallery">
+  <div class="container">
+    <h3 class="text-center mb-4 text-white">Gallery</h3>
+    <div class="row g-4">
+      <div class="col-md-4 gallery-img"><img src="images/img1.jpg" alt="PS5"></div>
+      <div class="col-md-4 gallery-img"><img src="images/img2.jpg" alt="Xbox"></div>
+      <div class="col-md-4 gallery-img"><img src="images/img3.jpg" alt="Switch"></div>
+      <div class="col-md-4 gallery-img"><img src="images/img10.jpg" alt="Switch"></div>
+      <div class="col-md-4 gallery-img"><img src="images/img11.jpg" alt="Switch"></div>
+      <div class="col-md-4 gallery-img"><img src="images/img12.jpg" alt="Switch"></div>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+   <footer>
+    <p>&copy; 2025 GameVerse. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
